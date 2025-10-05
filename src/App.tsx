@@ -10,6 +10,8 @@ import Coach from "./pages/Coach";
 import ProgressPage from "./pages/Progress";
 import Learn from "./pages/Learn";
 import Settings from "./pages/Settings";
+import Auth from "./pages/Auth";
+import Account from "./pages/Account";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/progress" element={<ProgressPage />} />
           <Route path="/learn" element={<Learn />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/account" element={<Account />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

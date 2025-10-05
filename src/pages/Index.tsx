@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Moon, Sun, MessageCircle, Book, BarChart3, Settings, Plus } from 'lucide-react';
+import { Moon, Sun, MessageCircle, Book, BarChart3, Settings, Plus, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
@@ -50,11 +50,18 @@ const Index = () => {
               <p className="text-sm text-muted-foreground">Sleep Coach</p>
             </div>
           </div>
-          <Link to="/settings">
-            <Button variant="ghost" size="icon" className="rounded-full">
-              <Settings className="w-5 h-5" />
-            </Button>
-          </Link>
+          <div className="flex gap-2">
+            <Link to="/account">
+              <Button variant="ghost" size="icon" className="rounded-full">
+                <User className="w-5 h-5" />
+              </Button>
+            </Link>
+            <Link to="/settings">
+              <Button variant="ghost" size="icon" className="rounded-full">
+                <Settings className="w-5 h-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </header>
 
