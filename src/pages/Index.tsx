@@ -144,21 +144,19 @@ const Index = () => {
 
         {/* Record Section */}
         <Card className="sleep-card animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-          <CardContent className="pt-6 text-center space-y-4">
-            <div className="w-16 h-16 rounded-full bg-sleep-accent/20 flex items-center justify-center mx-auto">
-              <div className="w-12 h-12 rounded-full bg-sleep-accent/30 flex items-center justify-center">
-                <MessageCircle className="w-6 h-6 text-sleep-accent" />
+          <CardContent className="pt-6 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-full bg-sleep-accent/20 flex items-center justify-center">
+                <MessageCircle className="w-5 h-5 text-sleep-accent" />
+              </div>
+              <div>
+                <h3 className="font-medium text-foreground">Record Voice Note</h3>
+                <p className="text-sm text-muted-foreground">Share your thoughts</p>
               </div>
             </div>
-            <div>
-              <h3 className="font-medium text-foreground mb-2">Voice Note</h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                Record your thoughts or sleep reflections
-              </p>
-              <Button className="sleep-button-primary">
-                Start Recording
-              </Button>
-            </div>
+            <Button size="lg" className="sleep-button-primary">
+              Record
+            </Button>
           </CardContent>
         </Card>
 
