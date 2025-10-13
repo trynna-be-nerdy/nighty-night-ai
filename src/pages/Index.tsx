@@ -142,6 +142,26 @@ const Index = () => {
           </CardContent>
         </Card>
 
+        {/* Record Section */}
+        <Card className="sleep-card animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <CardContent className="pt-6 text-center space-y-4">
+            <div className="w-16 h-16 rounded-full bg-sleep-accent/20 flex items-center justify-center mx-auto">
+              <div className="w-12 h-12 rounded-full bg-sleep-accent/30 flex items-center justify-center">
+                <MessageCircle className="w-6 h-6 text-sleep-accent" />
+              </div>
+            </div>
+            <div>
+              <h3 className="font-medium text-foreground mb-2">Voice Note</h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                Record your thoughts or sleep reflections
+              </p>
+              <Button className="sleep-button-primary">
+                Start Recording
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Quick Actions */}
         <div className="grid grid-cols-2 gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <Link to="/diary">
